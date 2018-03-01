@@ -1,0 +1,152 @@
+<section id="home">
+  <div class="overlay-secundario">
+    <div class="u-contenedor-80 u-distribuir-espacio u-column">
+      <div class="contenedor-center">
+        <h1 class="titulo-marca">{{marca}}</h1>
+        <h3 class="slogan">Tu estilista <br> 24 horas!!</h3>
+        <span>Que tus uñas sean tan perfectas <br> como tu día</span>
+      </div>
+      <div class="contenedor-btn">
+        <button routerLink="/servicios/agendar-cita" class="btn-primario">agendar cita</button>
+      </div>
+    </div>
+  </div>
+
+</section>
+<section id="beneficios">
+  <div class="contenedor-beneficios">
+    <div class="contenedor-title-beneficios">
+      <h1 class="titulo-seccion-vertical">BENEFICIOS</h1>
+    </div>
+    <div class="contenedor-items-beneficios entrada-derecha">
+      <div class="item-beneficio">
+        <h5>- Ahorra tiempo -</h5>
+        <span>Ya no esperes horas en el salón de belleza.</span><br>
+        <p><strong>Mejor lleva el salón a tu casa.</strong></p>
+      </div>
+      <div class="item-beneficio">
+        <h5>- Luce siempre bella -</h5>
+        <span>Adelantaron la reunión!!! :O</span>
+        <p><strong>En solo 3 clics nuestra especialista estará en tu casa.</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="servicios" class="u-column">
+  <h1>¡Nuestros <span class="color-secundario">Servicios!</span></h1>
+
+  <div class="u-contenedor-80 contenedor-items-servicios">
+    <div routerLink="/servicios/decoracion-de-unas" class="item-servicio">
+      <img src="../../assets/imagenes/servicio-cat-uñas.jpg" alt="servicio a domicilio de decoración de uñas 2018">
+      <div class="overlay-cat">
+        <label class="title-cat">uñas</label>
+      </div>
+    </div>
+    <div routerLink="/servicios/corte-de-cabello" class="item-servicio">
+      <img src="../../assets/imagenes/servicio-cat-cabello.jpg" alt="servicio a domicilio de cortes de cabello 2018">
+      <div class="overlay-cat">
+        <label class="title-cat">cabello</label>
+      </div>
+    </div>
+    <div routerLink="/servicios/maquillaje-a-domicilio" class="item-servicio">
+      <img src="../../assets/imagenes/servicio-cat-maquillaje.jpg" alt="servicio a domicilio de maquillaje de ojos">
+      <div class="overlay-cat">
+        <label class="title-cat">maquillaje</label>
+      </div>
+    </div>
+    <div routerLink="/servicios/masaje-relajante-a-domicilio" class="item-servicio">
+      <img src="../../assets/imagenes/servicio-cat-masaje.jpg" alt="servicio a domicilio de masaje relajante">
+      <div class="overlay-cat">
+        <label class="title-cat">masaje</label>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="comoFunciona">
+  <div class="md-fondo-secundario"></div>
+  <h1><span class="titulo-seccion-blanco">¿como</span> funciona?</h1>
+  <div class="video-container">
+    <iframe id="videoyoutube"  src="https://www.youtube.com/embed/OEaA_p_MRvE?rel=0&amp;showinfo=0"
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <img id="btn-play-youtube" (click)="reproducirVideo()" class="btn-youtube" src="../../assets/imagenes/youtube%20play%20icon.png"
+         alt="boton para reproducir video de como funciona la plataforma {{marca}}">
+  </div>
+</section>
+
+<section id="testimonios">
+  <h1>Testimonios</h1>
+
+  <div class="contenedor-testimonios">
+    <div class="item-testimonio">
+      <div class="item-testimonios-text">
+        <label>Ana</label>
+        <p>Un excelente servicio <br> los recomiendo.</p>
+      </div>
+      <div class="item-testimonio-img">
+        <img src="../../assets/imagenes/img%20testimonio%201.png"
+             alt="imagen del testimonio que recomienda nuestra aplicación {{marca}}">
+      </div>
+    </div>
+    <div class="item-testimonio">
+      <div class="item-testimonios-text">
+        <label>Nancy</label>
+        <p>Un excelente servicio <br> los recomiendo.</p>
+      </div>
+      <div class="item-testimonio-img">
+        <img src="../../assets/imagenes/img%20testimonio%201.png"
+             alt="imagen del testimonio que recomienda nuestra aplicación {{marca}}">
+      </div>
+    </div>
+    <div class="item-testimonio">
+      <div class="item-testimonios-text">
+        <label>Ana</label>
+        <p>Un excelente servicio <br> los recomiendo.</p>
+      </div>
+      <div class="item-testimonio-img">
+        <img src="../../assets/imagenes/img%20testimonio%202.png"
+             alt="imagen del testimonio que recomienda nuestra aplicación {{marca}}">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="unete">
+  <div class="overlay-primary">
+    <div class="unete-contenedor-text">
+      <h1>Unete <br> <span>a nuestro equipo!</span></h1>
+
+      <p>Queremos impulsar tu estilo de vida <br> y apoyarte para crecer</p>
+
+      <button routerLink="/bolsa-de-trabajo/eres-estilista">Unirme</button>
+    </div>
+    <div class="unete-contenedor-img">
+      <img src="../../assets/imagenes/unete-profesional.png" alt="imagen de una profesionista {{marca}}">
+    </div>
+  </div>
+</section>
+
+<section id="app-movil">
+  <div class="overlay-black">
+    <div class="appMovil-contenido">
+      <h1>Descarga <br>nuestra App</h1>
+      <div class="btns-app">
+        <button><img src="../../assets/imagenes/btn-google.png" alt="boton para descargar la app de {{marca}} desde google play"></button>
+        <button><img src="../../assets/imagenes/btn-app-store.png" alt=" boton para descargar la app de {{marca}} desde el app store"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="suscribete" class="componente-nav-inferior">
+  <div class="suscribete-contenedor">
+    <h1 class="u-contenedor-80">Suscribete <span> y obten nuestras noticias más recientes <br> sobre nuestros servicios, eventos y</span> promociones</h1>
+    <div class="u-contenedor-80 suscribete-form">
+      <input type="email" placeholder="escribe tu email:">
+      <button>suscribirme</button>
+    </div>
+  </div>
+</section>
+
+

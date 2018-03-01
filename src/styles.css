@@ -1,1 +1,80 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500');
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.componente{
+  margin-top: 77px;
+}
+
+.componente-nav-inferior{
+  margin-bottom: 77px;
+}
+
+ul li{
+  list-style: none;
+}
+
+ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+button,input,textarea{
+  outline: none;
+}
+
+section{
+  overflow: hidden;
+}
+
+/*TABLAS Y LISTAS */
+table{
+  width: 90%;
+  padding: 20px 0;
+}
+
+table tr{
+  width: 100%;
+}
+
+table tr td{
+  padding: 5px;
+}
+
+table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+tr img{
+  width: 20px;
+}
+
+
+/*table tr:nth-child(n+2):hover{
+  background: #ff616f;
+  color: white;
+}*/
+
+table, tr ,td{
+  border: none;
+}
+.contenedor-tablas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+button{
+  outline: none;
+}

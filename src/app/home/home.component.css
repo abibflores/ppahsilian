@@ -1,0 +1,765 @@
+/*UTILIDADES*/
+.u-contenedor-80 {
+  width: 80%;
+}
+
+.u-distribuir-espacio {
+  display: flex;
+  justify-content: space-around;
+}
+
+.u-column {
+  flex-direction: column;
+}
+
+/*ESTILOS HOME*/
+button{
+  outline: none;
+}
+h1 {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+span {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+section {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home {
+  height: 100vh;
+  background: url('imagenes/home-fondo.jpg') right top no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.overlay-secundario {
+  background: rgba(255, 128, 171, 0.8);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.contenedor-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titulo-marca {
+  font-size: 120px;
+  margin: 0;
+}
+
+.slogan {
+  font-size: 24px;
+  text-align: center;
+  font-family: "Fira Sans";
+  font-weight: 500;
+}
+
+.contenedor-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.btn-primario {
+  background: #ff1744;
+  color: white;
+  border-radius: 50px;
+  border: solid white 3px;
+  width: 250px;
+  padding: 10px 0;
+  font-size: 30px;
+}
+
+/*ESTILOS BENEFICIOS*/
+.contenedor-beneficios {
+  margin: 50px 0;
+  display: flex;
+  width: 100%;
+  min-height: 400px;
+}
+
+.contenedor-title-beneficios {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-seccion-vertical {
+  font-size: 60px;
+  font-weight: 500;
+  transform: rotateZ(-90deg);
+}
+
+.contenedor-items-beneficios {
+  background: #ff616f;
+  width: 80%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.item-beneficio {
+  width: 90%;
+
+}
+
+.item-beneficio h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.item-beneficio strong {
+  font-weight: 500;
+  font-size: 20px;
+  padding: 15px 0;
+}
+
+.item-beneficio span {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px 0;
+}
+
+.big-strong {
+  font-size: 25px;
+}
+
+/*ESTILOS SERVICIOS*/
+#servicios {
+  margin-bottom: 50px;
+}
+
+.color-secundario {
+  color: #ff616f;
+  font-size: 65px;
+  font-weight: 500;
+}
+
+.contenedor-items-servicios {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-servicio {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  z-index: 0;
+}
+
+.item-servicio img {
+  width: 100%;
+  object-fit: cover;
+  height: 400px;
+  z-index: 0;
+}
+
+.overlay-cat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  display: flex;
+  background: rgba(255, 23, 68, .5);
+  z-index: 5;
+  height: 100%;
+  transition: 1s width;
+}
+
+.title-cat {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: rotateZ(-90deg);
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.item-servicio:hover .overlay-cat{
+  width: 50%;
+}
+
+/*ESTILOS COMO FUNCIONA*/
+
+#comoFunciona {
+  flex-direction: column;
+  height: 100vh;
+}
+
+#comoFunciona h1 {
+  position: relative;
+  left: 40px;
+  margin: 20px 0;
+}
+
+.titulo-seccion-blanco {
+  color: white;
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.md-fondo-secundario {
+  background: #ff616f;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+}
+
+.video-container {
+  display: flex;
+  position: relative;
+}
+
+.video-container iframe{
+  width:720px; height:400px;
+
+}
+
+.btn-youtube {
+  position: absolute;
+  left: calc(50% - 75px);
+  top: calc(50% - 75px);
+}
+
+/*ESTILOS TESTIMONIOS*/
+#testimonios {
+  flex-direction: column;
+  background: #ebebeb;
+}
+
+#testimonios h1 {
+  color: #ccc;
+}
+
+.contenedor-testimonios {
+  display: flex;
+  width: 80%;
+  background: white;
+  min-height: 400px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.item-testimonio {
+  display: flex;
+  width: 50%;
+  background: white;
+  border: solid #ff616f 3px;
+  min-height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.item-testimonios-text {
+  width: 55%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.item-testimonios-text label {
+  font-weight: 500;
+  font-size: 30px;
+  color: #828282;
+}
+
+.item-testimonio-img {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-testimonio-img img {
+  width: 150px;
+}
+
+/*ESTILOS MODIFICADORES DE ITEMS*/
+.contenedor-testimonios div:nth-child(1) {
+  right: -16%;
+  transform: scale(.8);
+}
+
+.contenedor-testimonios div:nth-child(2) {
+  z-index: 5;
+}
+
+.contenedor-testimonios div:nth-child(3) {
+  right: 16%;
+  transform: scale(.8);
+}
+
+/*ESTILOS UNETE A NOSOTROS*/
+
+#unete{
+  background: url('../../assets/imagenes/fondo-unete-a-nosotros.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.overlay-primary{
+  background: rgba(255,23,68,.9);
+  width: 100%;
+  min-height: 90vh;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+.unete-contenedor-text{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.unete-contenedor-text h1{
+  font-size: 80px;
+  line-height: 30px;
+}
+
+.unete-contenedor-text p{
+  font-size: 30px;
+  font-weight: 400;
+}
+.unete-contenedor-text span{
+  padding-left: 200px;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.unete-contenedor-img {
+  height: 100%;
+
+}
+
+.unete-contenedor-text button{
+  background: #fff;
+  color: #ff1744;
+  border-radius: 50px;
+  border: solid #ccc 3px;
+  width: 250px;
+  padding: 10px 0;
+  font-size: 30px;
+  margin: 50px;
+
+}
+
+.unete-contenedor-img{
+  height: 100%;
+}
+
+/*ESTILOS DESCARGA NUESTRA APP*/
+
+#app-movil{
+  width: 100%;
+  height: 100vh;
+  background: url('../../assets/imagenes/fondo-appMovil.jpg') center top no-repeat;
+  background-size: cover;
+}
+
+.overlay-black{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background: rgba(0,0,0,.8);
+  color: white;
+}
+
+.appMovil-contenido{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btns-app{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.btns-app button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  width: 50%;
+}
+.btns-app button img{
+  width: 40%;
+  min-width: 100px;
+  max-width: 120px;
+}
+
+/*ESTILOS SUSCRIBETE*/
+.suscribete-contenedor{
+  width: 100%;
+  background:#ff1744;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.suscribete-contenedor h1{
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+
+}
+.suscribete-contenedor span{
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+
+}
+.suscribete-form{
+  background: white;
+  border-radius: 50px;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.suscribete-form input{
+  background: transparent;
+  border: none;
+  height: 40px;
+  padding: 0 0 0 25px;
+  font-size: 20px;
+}
+
+.suscribete-form button{
+  background: #ff1744;
+  color: white;
+  border-radius: 50px;
+  height: 40px;
+  margin: 0 5px 0 0;
+  padding: 0 10px ;
+  font-size: 20px;
+}
+
+/*ESTILOS MOVILES*/
+
+@media only screen and (max-width: 860px) {
+  /*ESTILOS HOME*/
+  .u-contenedor-80{
+    width: 95%;  }
+
+  .contenedor-btn {
+    padding: 30px 0;
+
+  }
+
+  /*ESTILOS TESTIMONIOS*/
+  .contenedor-testimonios {
+    width: 95%;
+  }
+
+  .item-testimonio {
+    flex-direction: column-reverse;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+
+  /*ESTILOS UNETE A NOSOTROS*/
+  .overlay-primary{
+    padding: 0 5%;
+  }
+  .unete-contenedor-text h1{
+    font-size: 60px;
+    line-height: 30px;
+  }
+
+  .unete-contenedor-text p{
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .unete-contenedor-text span{
+    padding-left: 100px;
+    font-size: 30px;
+  }
+
+}
+@media only screen and (max-width: 720px) {
+
+  /*ESTILOS HOME*/
+  h1{
+    text-align: center;
+    font-size: 40px;
+  }
+  .overlay-secundario .u-contenedor-80{
+    height: 100%;
+  }
+
+
+  /*ESTILOS SERVICIOS*/
+  .contenedor-items-servicios div.item-servicio:nth-child(n+2){
+    display: none;
+  }
+  .item-servicio {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+  }
+
+  .item-servicio img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+    z-index: 0;
+  }
+
+
+  /*ESTILOS COMO FUNCIONA*/
+
+  #comoFunciona h1 {
+    font-size: 40px;
+    left: 30px;
+  }
+
+  .titulo-seccion-blanco {
+    font-size: 40px;
+  }
+
+
+  .video-container iframe{
+    width:500px; height:300px;
+
+  }
+
+
+  /*ESTILOS TESTIMONIOS*/
+
+  .contenedor-testimonios {
+    width: 90%;
+  }
+
+  .item-testimonio {
+    width: 90%;
+    flex-direction: row;
+  }
+
+  .item-testimonios-text {
+    width: 50%;
+  }
+
+  .item-testimonio-img {
+    width: 50%;
+  }
+
+  /*ESTILOS MODIFICADORES DE ITEMS*/
+  .contenedor-testimonios div.item-testimonio:nth-child(1) {
+    transform: scale(1);
+    display: none;
+  }
+
+  .contenedor-testimonios div.item-testimonio:nth-child(3) {
+    transform: scale(1);
+    display: none;
+  }
+
+
+  /*ESTILOS UNETE A NOSOTROS*/
+
+  .overlay-primary{
+    justify-content: flex-start;
+  }
+
+  .unete-contenedor-text{
+    min-height: 90vh;
+  }
+  .unete-contenedor-text h1{
+    font-size: 40px;
+    line-height: 20px;
+  }
+
+  .unete-contenedor-text p{
+    font-size: 16px;
+  }
+  .unete-contenedor-text span{
+    padding-left: 100px;
+    font-size: 20px;
+  }
+
+  .unete-contenedor-img {
+    position: absolute;
+    top:0;
+    right: 0;
+
+  }
+
+  .unete-contenedor-text button{
+    margin: 0px;
+
+  }
+
+  .unete-contenedor-img img{
+    height: 100%;
+  }
+
+  /*ESTILOS DESCARGA NUESTRA APP*/
+
+  #app-movil{
+    background-position: 30%;
+  }
+
+
+  .appMovil-contenido{
+    width: 100%;
+    justify-content: flex-end;
+    padding:20px 0;
+  }
+
+  .btns-app button img{
+    width: 40%;
+    min-width: 80px;
+    max-width: 120px;
+  }
+
+  /*ESTILOS SUSCRIBETE*/
+
+  .suscribete-contenedor h1{
+    font-size: 24px;
+
+  }
+  .suscribete-contenedor span{
+    font-size: 16px;
+
+  }
+
+
+}
+@media only screen and (max-width: 500px) {
+
+  /*ESTILOS HOME*/
+
+
+  .titulo-marca {
+    font-size: 50px;
+  }
+
+  /*ESTILOS COMO FUNCIONA*/
+
+  #comoFunciona h1 {
+    font-size: 30px;
+    left: 20px;
+  }
+
+  .titulo-seccion-blanco {
+    font-size: 30px;
+  }
+
+
+  .video-container iframe{
+    width:300px; height:200px;
+
+  }
+
+
+
+  /*ESTILOS UNETE A NOSOTROS*/
+  .unete-contenedor-text{
+    width: 100%;
+  }
+
+  .overlay-primary{
+    justify-content: center;
+  }
+  .unete-contenedor-text h1{
+    font-size: 40px;
+    line-height: 24px;
+  }
+
+  .unete-contenedor-text p{
+    font-size: 16px;
+    width: 100%;
+  }
+  .unete-contenedor-text span{
+    padding-left: 100px;
+    font-size: 16px;
+  }
+
+  .unete-contenedor-img {
+    display: none;
+
+  }
+
+
+
+  /*ESTILOS SUSCRIBETE*/
+
+  .suscribete-form{
+    background: white;
+    border-radius: 50px;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .suscribete-form input{
+    width: 50%;
+    height: 40px;
+    padding: 0 0 0 25px;
+    font-size: 13px;
+  }
+
+  .suscribete-form button{
+    width: 50%;
+    background: #ff1744;
+    color: white;
+    border-radius: 50px;
+    height: 40px;
+    margin: 0 5px 0 0;
+    padding: 0 10px ;
+    font-size: 20px;
+  }
+
+}
